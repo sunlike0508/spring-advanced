@@ -1,7 +1,6 @@
 package hello.advanced.trace.hellotrace.HelloTraceV1;
 
 import hello.advanced.trace.TraceStatus;
-import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

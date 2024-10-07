@@ -126,6 +126,8 @@ public class FieldServiceTest {
 
 **사용자A 저장 요청**
 
+<img width="679" alt="Screenshot 2024-10-07 at 23 50 39" src="https://github.com/user-attachments/assets/d133105a-fb40-4ccf-a981-d50a95ea1432">
+
 1. 사용자A가 저장 HTTP를 요청했다.
 2. WAS는 쓰레드 풀에서 쓰레드를 하나 조회한다.
 3. 쓰레드 `thread-A` 가 할당되었다.
@@ -134,6 +136,7 @@ public class FieldServiceTest {
 
 **사용자A 저장 요청 종료**
 
+<img width="689" alt="Screenshot 2024-10-07 at 23 49 51" src="https://github.com/user-attachments/assets/352d2213-01e6-4abe-b006-bb9662d7cfe8">
 
 1. 사용자A의 HTTP 응답이 끝난다.
 2. WAS는 사용이 끝난 `thread-A` 를 쓰레드 풀에 반환한다. 쓰레드를 생성하는 비용은 비싸기 때문에 쓰레 드를 제거하지 않고, 보통 쓰레드 풀을 통해서 쓰레드를 재사용한다.
@@ -142,6 +145,7 @@ public class FieldServiceTest {
 
 **사용자B 조회 요청**
 
+<img width="676" alt="Screenshot 2024-10-07 at 23 51 00" src="https://github.com/user-attachments/assets/b50c9cdf-aeee-4369-b5b9-bdbaa1f17e6d">
 
 1. 사용자B가 조회를 위한 새로운 HTTP 요청을 한다.
 2. WAS는 쓰레드 풀에서 쓰레드를 하나 조회한다.

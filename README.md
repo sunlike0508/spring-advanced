@@ -104,12 +104,15 @@ public class FieldServiceTest {
 
 따라서 같은 인스턴스의 쓰레드 로컬 필드에 접 근해도 문제 없다.
 
+<img width="681" alt="Screenshot 2024-10-07 at 23 32 12" src="https://github.com/user-attachments/assets/9056843b-60aa-4a5d-b17e-699bb1ccada6">
 
 `thread-A` 가 `userA` 라는 값을 저장하면 쓰레드 로컬은 `thread-A` 전용 보관소에 데이터를 안전하게 보관한다.
 
+<img width="708" alt="Screenshot 2024-10-07 at 23 32 41" src="https://github.com/user-attachments/assets/fc8b9832-9404-4484-814d-eb295999105b">
 
 `thread-B` 가 `userB` 라는 값을 저장하면 쓰레드 로컬은 `thread-B` 전용 보관소에 데이터를 안전하게 보관한다.
 
+<img width="714" alt="Screenshot 2024-10-07 at 23 33 04" src="https://github.com/user-attachments/assets/29d869f9-a759-4301-93ca-841307e9dd12">
 
 쓰레드 로컬을 통해서 데이터를 조회할 때도 `thread-A` 가 조회하면 쓰레드 로컬은 `thread-A` 전용 보관소에서 `userA` 데이터를 반환해준다. 
 

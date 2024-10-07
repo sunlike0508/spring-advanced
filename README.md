@@ -41,6 +41,10 @@ public class FieldServiceTest {
 }
 ```
 
+
+<img width="690" alt="Screenshot 2024-10-07 at 23 25 40" src="https://github.com/user-attachments/assets/7db6c79d-83c5-433e-ad3b-754be1e05aca">
+<img width="694" alt="Screenshot 2024-10-07 at 23 25 51" src="https://github.com/user-attachments/assets/22a65f08-7688-4d7b-a186-070fb6a00203">
+
 0.1초 이후에 `thread-B` 가 `userB` 의 값을 `nameStore` 에 보관한다. 
 
 기존에 `nameStore` 에 보관되어 있던 `userA` 값은 제거되고 `userB` 값이 저장된다.

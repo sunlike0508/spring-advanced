@@ -139,8 +139,8 @@ public class FieldServiceTest {
 <img width="689" alt="Screenshot 2024-10-07 at 23 49 51" src="https://github.com/user-attachments/assets/352d2213-01e6-4abe-b006-bb9662d7cfe8">
 
 1. 사용자A의 HTTP 응답이 끝난다.
-2. WAS는 사용이 끝난 `thread-A` 를 쓰레드 풀에 반환한다. 쓰레드를 생성하는 비용은 비싸기 때문에 쓰레 드를 제거하지 않고, 보통 쓰레드 풀을 통해서 쓰레드를 재사용한다.
-3. `thread-A` 는 쓰레드풀에 아직 살아있다. 따라서 쓰레드 로컬의 `thread-A` 전용 보관소에 `사용자A` 데이 터도 함께 살아있게 된다.
+2. WAS는 사용이 끝난 `thread-A` 를 쓰레드 풀에 반환한다. 쓰레드를 생성하는 비용은 비싸기 때문에 쓰레드를 제거하지 않고, 보통 쓰레드 풀을 통해서 쓰레드를 재사용한다.
+3. `thread-A` 는 쓰레드풀에 아직 살아있다. 따라서 쓰레드 로컬의 `thread-A` 전용 보관소에 `사용자A` 데이터도 함께 살아있게 된다.
 
 
 **사용자B 조회 요청**

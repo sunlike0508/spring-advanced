@@ -21,10 +21,10 @@ class TemplateMethodTest {
     @Test
     void templateMethodV1() {
         AbstractTemplate abstractTemplate = new SubClassLogic1();
-        abstractTemplate.excute();
+        abstractTemplate.execute();
 
         AbstractTemplate abstractTemplate2 = new SubClassLogic2();
-        abstractTemplate2.excute();
+        abstractTemplate2.execute();
     }
 
     @Test
@@ -39,7 +39,7 @@ class TemplateMethodTest {
 
         System.out.println(abstractTemplate.getClass());
 
-        abstractTemplate.excute();
+        abstractTemplate.execute();
 
         AbstractTemplate abstractTemplate2 = new AbstractTemplate() {
 
@@ -49,7 +49,7 @@ class TemplateMethodTest {
             }
         };
 
-        abstractTemplate2.excute();
+        abstractTemplate2.execute();
     }
 
 

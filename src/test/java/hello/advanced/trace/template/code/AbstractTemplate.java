@@ -6,7 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public abstract class AbstractTemplate {
 
-    public void excute() {
+    public void execute() {
         long startTime = System.currentTimeMillis();
 
         call();

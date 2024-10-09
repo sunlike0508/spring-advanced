@@ -1,24 +1,24 @@
-package hello.advanced.trace.template;
-
+package hello.advanced.trace.callback;
 
 import hello.advanced.trace.TraceStatus;
 import hello.advanced.trace.logtrace.LogTrace;
 
-public abstract class AbstractTemplate<T> {
+
+public class TraceTemplate<T> {
 
     private final LogTrace trace;
 
-    public AbstractTemplate(LogTrace trace) {
+    public TraceTemplate(LogTrace trace) {
         this.trace = trace;
     }
 
-    public T execute(String message) {
+    public T execute(String message, TraceCallback<T> callback) {
         TraceStatus status = null;
 
         try {
             status = trace.begin(message);
 
-            T result = call();
+            T result = callback.call();
 
             trace.end(status);
 
@@ -28,6 +28,4 @@ public abstract class AbstractTemplate<T> {
             throw e;
         }
     }
-
-    protected  abstract T call() ;
 }

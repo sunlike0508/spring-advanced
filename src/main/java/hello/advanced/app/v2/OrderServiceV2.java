@@ -16,7 +16,7 @@ public class OrderServiceV2 {
 
 
     public void orderItem(TraceId traceId, String itemId) {
-        TraceStatus status = traceV2.beginSync(traceId, "OrderServiceV1.orderItem");
+        TraceStatus status = traceV2.beginSync(traceId, "OrderService.orderItem");
 
         try {
             orderRepository.save(status.getTraceId(), itemId);

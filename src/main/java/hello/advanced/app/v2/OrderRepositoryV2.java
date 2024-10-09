@@ -15,7 +15,7 @@ public class OrderRepositoryV2 {
 
     public void save(TraceId traceId, String itemId) {
 
-        TraceStatus status = traceV2.beginSync(traceId, "OrderRepositoryV1.save");
+        TraceStatus status = traceV2.beginSync(traceId, "OrderRepository.save");
 
         try {
             if(itemId.equals("ex")) {

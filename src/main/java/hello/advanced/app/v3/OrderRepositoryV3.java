@@ -17,7 +17,7 @@ public class OrderRepositoryV3 {
 
     public void save(String itemId) {
 
-        TraceStatus status = trace.begin("OrderRepositoryV1.save");
+        TraceStatus status = trace.begin("OrderRepository.save");
 
         try {
             if(itemId.equals("ex")) {

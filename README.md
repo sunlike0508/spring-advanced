@@ -227,6 +227,8 @@ public class FieldServiceTest {
 
 ## 템플릿 메서드 패턴 - 정의
 
+<img width="222" alt="Screenshot 2024-10-09 at 16 21 33" src="https://github.com/user-attachments/assets/9b192a5f-708e-4d42-a6ee-450fa270de85">
+
 GOF 디자인 패턴에서는 템플릿 메서드 패턴을 다음과 같이 정의했다.
 
 템플릿 메서드 디자인 패턴의 목적은 다음과 같습니다.
@@ -295,6 +297,7 @@ GOF 디자인 패턴에서 정의한 전략 패턴의 의도는 다음과 같다
 
 전략을 사용하면 알고리즘을 사용하는 클라이언트와 독립적으로 알고리즘을 변경할 수 있다.
 
+<img width="710" alt="Screenshot 2024-10-09 at 16 41 45" src="https://github.com/user-attachments/assets/fc65a01c-7162-4e83-875d-b66ac46bb8ec">
 
 
 

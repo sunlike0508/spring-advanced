@@ -354,13 +354,12 @@ GOF 디자인 패턴에서 정의한 전략 패턴의 의도는 다음과 같다
 
 이번에는 전략을 실행할 때 직접 파라미터로 전달해서 사용해보자.
 
-
+<img width="697" alt="Screenshot 2024-10-09 at 17 04 52" src="https://github.com/user-attachments/assets/53dc9090-c68d-4e24-8956-0902759b5bc1">
 
 1. 클라이언트는 `Context` 를 실행하면서 인수로 `Strategy` 를 전달한다. 
 2. `Context` 는 `execute()` 로직을 실행한다.
 3. `Context` 는 파라미터로 넘어온 `strategy.call()` 로직을 실행한다. 
 4. `Context` 의 `execute()` 로직이 종료된다.
-
 
 **정리**
 `ContextV1` 은 필드에 `Strategy` 를 저장하는 방식으로 전략 패턴을 구사했다.

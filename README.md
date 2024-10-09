@@ -428,6 +428,7 @@ GOF 디자인 패턴에서 정의한 전략 패턴의 의도는 다음과 같다
 
 스프링에서 이름에 `XxxTemplate` 가 있다면 템플릿 콜백 패턴으로 만들어져 있다 생각하면 된다.
 
+<img width="687" alt="Screenshot 2024-10-09 at 17 18 33" src="https://github.com/user-attachments/assets/fdd6a571-eb10-4bea-981e-da33107f4dd2">
 
 
 

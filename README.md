@@ -313,7 +313,7 @@ GOF 디자인 패턴에서 정의한 전략 패턴의 의도는 다음과 같다
 
 어디서 많이 본 코드 같지 않은가? 그렇다. 바로 스프링에서 의존관계 주입에서 사용하는 방식이 바로 전략 패턴이다.
 
-
+<img width="691" alt="Screenshot 2024-10-09 at 16 54 32" src="https://github.com/user-attachments/assets/44735c15-38ec-4c8b-a37b-5af050d23044">
 
 1. `Context` 에 원하는 `Strategy` 구현체를 주입한다.
 2. 클라이언트는 `context` 를 실행한다.

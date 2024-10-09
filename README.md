@@ -191,7 +191,7 @@ public class FieldServiceTest {
 
 그리고 변하는 부분은 자식 클래스에 두고 상속과 오버라이딩을 사용해서 처리한다.
 
-![Uploading Screenshot 2024-10-09 at 15.50.09.png…]()
+<img width="708" alt="Screenshot 2024-10-09 at 15 50 09" src="https://github.com/user-attachments/assets/ae2a13a9-583e-494f-b2c4-18980405525f">
 
 `template1.execute()` 를 호출하면 템플릿 로직인 `AbstractTemplate.execute()` 를 실행한다. 여기서 중 간에 `call()` 메서드를 호출하는데, 이 부분이 오버라이딩 되어있다. 따라서 현재 인스턴스인 `SubClassLogic1` 인 스턴스의 `SubClassLogic1.call()` 메서드가 호출된다.
 템플릿 메서드 패턴은 이렇게 다형성을 사용해서 변하는 부분과 변하지 않는 부분을 분리하는 방법이다.
